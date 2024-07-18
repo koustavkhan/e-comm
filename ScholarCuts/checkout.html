@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 
+          - custom css link
+        -->
+        <link rel="stylesheet" href="./style/checkout-styles.css">
+
+
+        <!-- 
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <title>Checkout Page | ScholarCuts</title>
+
+        <!-- 
+          - favicon
+        -->
+        <link rel="icon" href="/assets/dis_logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <div id="container">
+          <h1>Checkout</h1>
+          <div id="flex">
+            <div id="form-side">
+              <p class="message"></p>
+              <form action="" id="form">
+                <div id="contact-section">
+                  <h3>Contact Information</h3>
+                  <div id="email-input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div id="phone-input">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+                <div id="shipping-section">
+                  <h3>Shipping Address</h3>
+                  <div id="name-input">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+                  <div id="address-input">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Your address">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <div id="city-input">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="Your city">
+                    <i class="fa-solid fa-city"></i>
+                  </div>
+                  <div id="country-post">
+                    <div id="country-input">
+                      <label for="country">District</label>
+                      <select name="country" id="country">
+                        <option value="Your District" selected="" disabled="">Your District</option>
+                        <option value="Barisal">Barisal</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                      </select>
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div id="postal-input">
+                      <label for="postal">Postal code</label>
+                      <input type="text" name="postal" id="postal" placeholder="Your postal code">
+                      <i class="fa-solid fa-building"></i>
+                    </div>
+                  </div>
+                  <div id="save-input">
+                    <input type="checkbox" id="save" name="save" value="Information">
+                    <label for="save">Save this information for next time</label>
+                  </div>
+                  <a href="./index.html">
+                    <button type="button" id="con-button">Continue</button>
+                  </a>
+                  <!-- <input type="submit" value="Continue"> -->
+                </div>
+              </form>
+            </div>
+            <div id="cart-side">
+              <div id="cart">
+                <div id="item1">
+                  <!-- imageeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+                  <div class="img"><img src="./images/photo1.png" alt=""></div>
+                  <div class="item-info">
+                    <div class="item-heading">
+                      <p class="item-name">Vintage Backbag</p>
+                      <p class="item-price">
+                        <span class="current1-price">Tk 54.99</span>
+                        <span class="previous1-price">Tk 94.99</span>
+                      </p>
+                    </div>
+                    <div class="quantity">
+                      <span class="item1-minus">-</span>
+                      <span class="item1-num">01</span>
+                      <span class="item1-plus">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="item2">
+                  <!-- imageeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+                  <div class="img"><img src="./images/photo2.png" alt=""></div>
+                  <div class="item-info">
+                    <div class="item-heading">
+                      <p class="item-name">Levi Shoes</p>
+                      <p class="item-price">
+                        <span class="current2-price">Tk 74.99</span>
+                        <span class="previous2-price">Tk 124.99</span>
+                      </p>
+                    </div>
+                    <div class="quantity">
+                      <span class="item2-minus">-</span>
+                      <span class="item2-num">01</span>
+                      <span class="item2-plus">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="info">
+                  <hr>
+                  <div id="shipping">
+                    <span class="title">Shipping</span>
+                    <span class="priceS">Tk 19</span>
+                  </div>
+                  <hr>
+                  <div id="total">
+                    <span class="title">Total</span>
+                    <span class="priceT">Tk 148.98</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer"><a href="#" target="_blank" id="footer-link">Riyad @ScholarCuts</a></footer>
+    
+    </body>
+</html>
